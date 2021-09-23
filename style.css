@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: rgb(204, 182, 182);
+  height: 100vh;
+}
+
+.image-container {
+  width: 300px;
+  height: 120px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.image-container img {
+  width: 90px;
+  height: 90px;
+  margin-right: auto;
+}
+
+.hide {
+  display: none;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  height: 70%;
+}
+
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+
+
+@media (max-width: 767.98px) {
+  .image-container {
+    height: 440px;
+  }
+
+  img {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+  }
+  #buttons button {
+    margin: 5px;
+    height: 30px;
+    width: 80px;
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #buttons button {
+    margin: 10px;
+  }
+
+  .image-container {
+    height: 260px;
+  }
+
+  img {
+    height: 75px;
+    width: 75px;
+    margin: 20px;
+  }
+}
